@@ -33,7 +33,9 @@ Route::middleware(['api'])->prefix('auth')->group(function ($router)
 
     Route::middleware(['auth', 'admin'])->group(function ()
     {
-        Route::post('blog', [BlogController::class,'index']);
+        Route::get('blog', [BlogController::class,'index']);
+        Route::get('blog/post', [BlogController::class,'index']);
+
     });
 
 

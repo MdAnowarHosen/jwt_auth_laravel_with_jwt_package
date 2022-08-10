@@ -17,4 +17,9 @@ class BlogController extends Controller
     {
         return "This is blog";
     }
+
+    public function post()
+    {
+        return "This is blog post!";
+    }
 }
